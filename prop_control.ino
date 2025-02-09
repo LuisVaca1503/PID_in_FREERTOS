@@ -166,7 +166,7 @@ static void buttonTask(void *pvParameters) {
        // Si el boton con logo UN supera el umbral pongo un color naranja 
        if (touchRead(BUTTON_UN) > threshold){           
             
-            // incrementamos  la referencia en 90°
+            // incrementamos  la referencia en 720°
             reference += 720;
             
             // cambiamos el color del led a azul por 1 segundo para indicar el cambio en la referencia
@@ -178,7 +178,7 @@ static void buttonTask(void *pvParameters) {
         // Si el boton con el dibujo de flor de la vida supera el umbral pongo un color azul claro 
        if (touchRead(BUTTON_LIFEFLOWER) > threshold){  
    
-            // decrementamos  la referencia en 90°           
+            // decrementamos  la referencia en 720°           
             reference-=720;
             // printf("Valor Sobrepico:%.2f, \r\n", SP);
             // cambiamos el color del led a rojo por 1 segundo para indicar el cambio en la referencia
